@@ -45,7 +45,7 @@ application:
     app.get('/auth/miicard',
       passport.authenticate('miicard'));
 
-    app.get('/auth/miicard/callback', 
+    app.get('/auth/miicard/callback',
       passport.authenticate('miicard', { failureRedirect: '/login' }),
       function(req, res) {
         // Successful authentication, redirect home.
@@ -62,8 +62,10 @@ application:
   - [Eugenio Pace](http://github.com/eugeniop)
   - [Jared Hanson](http://github.com/jaredhanson)
 
+## Author
+
+[Auth0](auth0.com)
+
 ## License
 
-[The MIT License](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2011-2013 Eugenio Pace
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
